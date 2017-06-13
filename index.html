@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <script type="text/javascript" src="calc.js"></script>
+
     <title>JS Calculator</title>
   </head>
   <body>
@@ -12,9 +15,10 @@
     <div class="jumbotron">
 
     <!--screen to see the operation's result -->
-
+    <div id="scr">This is screen</div>
+    <div id = "equation">Here I will build the equation</div>
     <!--Basic buttons 0-9 -->
-       <button type="button">9</button>
+       <button type="button" onclick="click()">9</button>
        <button type="button">8</button>
        <button type="button">7</button>
        <button type="button">6</button>
@@ -31,7 +35,11 @@
        <button type="button">*</button>
        <button type="button">/</button>
    <!--button to finish the equation -->
-    <button type="button">=</button>
+       <button type="button">=</button>
+
+   <!--last two buttons for decimals and delete -->
+       <button type="button">.</button>
+       <button type="button">C</button>
 
 
     </div>
